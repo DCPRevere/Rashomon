@@ -1,0 +1,7 @@
+* Glossary
+** Testimony
+** Perspectives
+** Events
+* Requirments
+A perspective on an initial event must allow for a nil testimony.
+Events must have event types with the key =:rashomon.event/type=
