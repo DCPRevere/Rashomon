@@ -1,6 +1,4 @@
-(ns rashomon.core
-  (:require [clojure.spec :as s]
-            [clojure.spec.gen :as g]))
+(ns rashomon.core)
 
 (defn persp->fn
   "Converts the perspectives map into a reducing function."
