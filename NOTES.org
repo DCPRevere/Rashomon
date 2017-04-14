@@ -5,3 +5,5 @@
 * Requirments
 A perspective on an initial event must allow for a nil testimony.
 Events must have event types with the key =:rashomon.event/type=
+* Next steps
+Give the ability to apply events to an existing aggregate

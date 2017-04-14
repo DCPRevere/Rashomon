@@ -7,7 +7,7 @@
   (fn [testimony event]
     (let [event-type (:rashomon.event/type event)
           perspective (get perspectives event-type)]
-      (if (nil?)
+      (if (nil? perspective)
         testimony
         (perspective testimony event)))))
 
