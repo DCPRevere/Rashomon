@@ -11,7 +11,11 @@
         testimony
         (perspective testimony event)))))
 
-(defn rebuild
-  [events perspectives]
+(defn apply-events
+  [testimony perspectives events]
   (let [fun (persp->fn perspectives)]
-    (reduce fun nil events)))
+    (reduce fun testimony events)))
+
+(defn rebuild
+  [perspectives events]
+  (apply-events nil perspectives events))
