@@ -3,6 +3,7 @@
             [clojure.spec.gen :as g]))
 
 (defn persp->fn
+  "Converts the perspectives map into a reducing function."
   [perspectives]
   (fn [testimony event]
     (let [event-type (:rashomon.event/type event)
